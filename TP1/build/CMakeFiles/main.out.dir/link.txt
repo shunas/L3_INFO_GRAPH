@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++17 -Wall -Wextra -g  -rdynamic CMakeFiles/main.out.dir/src/lr.cpp.o CMakeFiles/main.out.dir/src/Point.cpp.o CMakeFiles/main.out.dir/src/Vecteur.cpp.o CMakeFiles/main.out.dir/src/Couleur.cpp.o  -o main.out -lstdc++ -lCppUTest -lCppUTestExt 
