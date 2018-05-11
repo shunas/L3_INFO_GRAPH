@@ -10,6 +10,12 @@ dx(dx),dy(dy),dz(dz)
 
 std::ostream& operator<<(std::ostream& os,const Vecteur& v)
 {
-	os <<"("<<v.dx<<","<<v.dy<<","<<v.dz<<")\n";
+	os <<"("<<v.dx<<","<<v.dy<<","<<v.dz<<")";
 	return os;
+}
+
+std::istream& operator>>(std::istream& is, Vecteur& v)
+{
+	is >> v.dx >> v.dy >> v.dz;
+	return is;
 }

@@ -11,8 +11,10 @@ class Point
 
 		Point();
 		Point(int x,int y,int z);
+		friend std::ostream& operator<<(std::ostream& os,const Point& p);
+		friend std::istream& operator>>(std::istream& is,Point& p);
 };
 
-std::ostream& operator<<(std::ostream& os,const Point& p);
+
 
 #endif

@@ -11,8 +11,10 @@ class Vecteur
 
 		Vecteur();
 		Vecteur(int dx,int dy,int dz);
+		friend std::ostream& operator<<(std::ostream& os,const Vecteur& v);
+		friend std::istream& operator>>(std::istream& is, Vecteur& v);
 };
 
-std::ostream& operator<<(std::ostream& os,const Vecteur& v);
+
 
 #endif

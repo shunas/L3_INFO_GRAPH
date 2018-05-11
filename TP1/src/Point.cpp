@@ -10,6 +10,12 @@ x(x),y(y),z(z)
 
 std::ostream& operator<<(std::ostream& os,const Point& p)
 {
-	os <<"("<<p.x<<","<<p.y<<","<<p.z<<")\n";
+	os <<"("<<p.x<<","<<p.y<<","<<p.z<<")";
 	return os;
+}
+
+std::istream& operator>>(std::istream& is,Point& p)
+{
+	is >> p.x >> p.y >> p.z;
+	return is;
 }

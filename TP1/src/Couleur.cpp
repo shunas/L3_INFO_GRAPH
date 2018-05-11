@@ -35,6 +35,12 @@ void Couleur::setColor(float r, float g, float b)
 
 std::ostream& operator<<(std::ostream& os,const Couleur& c)
 {
-	os <<"("<<c.r<<","<<c.g<<","<<c.b<<")\n";
+	os <<"("<<c.r<<","<<c.g<<","<<c.b<<")";
 	return os;
+}
+
+std::istream& operator>>(std::istream& is,Couleur& c)
+{
+	is >> c.r >> c.g >> c.b;
+	return is;
 }

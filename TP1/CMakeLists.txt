@@ -11,6 +11,13 @@ add_executable( main.out src/lr.cpp
 	src/Point.cpp
 	src/Vecteur.cpp
 	src/Couleur.cpp
+	src/Materiau.cpp
+	src/Intensite.cpp
+	src/Objet.cpp
+	src/Sphere.cpp
+	src/Plan.cpp
+	src/Source.cpp
+	src/Scene.cpp
 )
 target_link_libraries( main.out ${PKG_LIBRARIES} )
 
