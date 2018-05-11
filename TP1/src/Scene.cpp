@@ -103,7 +103,10 @@ void Scene::charger(std::string nom)
 void Scene::afficher() const
 {
 	std::cout << "contenu de la scène :\n";
-
+	for (Objet * o:objets)
+	{
+		std::cout << o;
+	}
 
 
 }
