@@ -4,7 +4,7 @@ Materiau::Materiau():
 couleur(Couleur(0.8,0.8,0.8)),kd(0.5),ks(0.1),s(10)
 {}
 
-Materiau::Materiau(Couleur& couleur, float kd, float ks, int s)
+Materiau::Materiau(Couleur couleur, float kd, float ks, int s)
 {
 	this->couleur = couleur;
 	this->kd = std::clamp(kd,0.0f,1.0f);
@@ -12,7 +12,7 @@ Materiau::Materiau(Couleur& couleur, float kd, float ks, int s)
 	this->s = std::clamp(s,1,INT_MAX);
 }
 
-void Materiau::setAttibut(Couleur& couleur, float kd, float ks, int s)
+void Materiau::setAttibut(Couleur couleur, float kd, float ks, int s)
 {
 	this->couleur = couleur;
 	this->kd = std::clamp(kd,0.0f,1.0f);
@@ -34,7 +34,7 @@ int Materiau::gets() const
 
 std::ostream& operator<<(std::ostream& os,const Materiau& m)
 {
-	os <<"("<<m.getCouleur()<<","<<m.getkd()<<","<<m.getks()<<","<<m.gets()<<")";
+	os <<m.getCouleur()<<","<<m.getkd()<<","<<m.getks()<<","<<m.gets();
 	return os;
 }
 

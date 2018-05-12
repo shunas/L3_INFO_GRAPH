@@ -14,8 +14,8 @@ class Materiau
 		int s;
 	public:
 		Materiau();
-		Materiau(Couleur& couleur, float kd, float ks, int s);
-		void setAttibut(Couleur& couleur, float kd, float ks, int s);
+		Materiau(Couleur couleur, float kd, float ks, int s);
+		void setAttibut(Couleur couleur, float kd, float ks, int s);
 		Couleur getCouleur() const;
 		float getkd() const;
 		float getks() const;

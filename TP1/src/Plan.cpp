@@ -23,9 +23,15 @@ float Plan::getD() const
 bool Plan::intersection() const
 {return false;}
 
+void Plan::afficher() const
+{
+	std::cout<<*this<<'\n';
+}
+
 std::ostream& operator<<(std::ostream& os,const Plan& p)
 {
-	os <<"Plan : ("<<p.getA()<<","<<p.getB()<<","<<p.getC()<<","<<p.getD()<<")";
+	os <<"Plan : d'équation " <<p.getA()<<"x + "<<p.getB()<<"y + "<<p.getC()<<"z + "<<p.getD()<<" = 0 ";
+	os <<"de matériau ["<<p.getMateriau()<<"]";
 	return os;
 }
 

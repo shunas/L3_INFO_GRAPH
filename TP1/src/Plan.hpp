@@ -18,6 +18,7 @@ class Plan:public Objet
 		float getC() const;
 		float getD() const;
 		bool intersection() const;
+		void afficher() const;
 		friend std::ostream& operator<<(std::ostream& os,const Plan& p);
 		friend std::istream& operator>>(std::istream& is,Plan& p);
 };

@@ -19,9 +19,16 @@ Point Sphere::getCentre() const
 float Sphere::getRayon() const
 {return rayon;}
 
+void Sphere::afficher() const
+{
+	std::cout << *this<<'\n';
+}
+
 std::ostream& operator<<(std::ostream& os,const Sphere& s)
 {
-	os <<"Sphere : "<<s.getMateriau()<<","<<s.getCentre()<<","<<s.getRayon()<<".";
+	os <<"Sphere : de rayon "<<s.getRayon();
+	os <<", de centre "<<s.getCentre();
+	os <<"de matériau ["<<s.getMateriau()<<']';
 	return os;
 }
 

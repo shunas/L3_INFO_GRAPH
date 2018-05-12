@@ -14,9 +14,14 @@ Point Source::getPosition() const
 Intensite Source::getIntensite() const
 {return intensite;}
 
+void Source::afficher() const
+{
+	std::cout<<*this<<'\n';
+}
+
 std::ostream& operator<<(std::ostream& os,const Source& src)
 {
-	os <<"Source : "<<src.getPosition()<<","<<src.getIntensite()<<".";
+	os <<"Source en "<<src.getPosition()<<" d'intensité "<<src.getIntensite()<<".";
 	return os;
 }
 
