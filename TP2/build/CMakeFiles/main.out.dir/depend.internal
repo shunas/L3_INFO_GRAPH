@@ -11,9 +11,11 @@ CMakeFiles/main.out.dir/src/Camera.cpp.o
  /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Objet.hpp
  /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Plan.hpp
  /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Point.hpp
+ /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Rayon.hpp
  /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Scene.hpp
  /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Source.hpp
  /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Sphere.hpp
+ /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Vecteur.hpp
 CMakeFiles/main.out.dir/src/Couleur.cpp.o
  /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Couleur.cpp
  /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Couleur.hpp
@@ -82,7 +84,9 @@ CMakeFiles/main.out.dir/src/main.cpp.o
  /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Objet.hpp
  /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Plan.hpp
  /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Point.hpp
+ /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Rayon.hpp
  /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Scene.hpp
  /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Source.hpp
  /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Sphere.hpp
+ /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Vecteur.hpp
  /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/main.cpp

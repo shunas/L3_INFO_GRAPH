@@ -4,7 +4,6 @@
 #include <vector>
 #include <string>
 #include <fstream>
-#include <typeinfo>
 #include "Objet.hpp"
 #include "Source.hpp"
 #include "Couleur.hpp"

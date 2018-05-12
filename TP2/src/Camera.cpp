@@ -16,7 +16,7 @@ float Camera::getDistance() const
 
 void Camera::genererImage(const Scene& sc, Image& im)
 {
-	Couleur bleu(0.0,0.0,1.0);
+	/*Couleur bleu(0.0,0.0,1.0);
 	Couleur blanc(1.0,1.0,1.0);
 	Point p(0,0,2);
 	float largeur = 2/im.getLargeur();
@@ -30,7 +30,7 @@ void Camera::genererImage(const Scene& sc, Image& im)
 
 			Rayon()
 		}
-	}
+	}*/
 }
 
 /*

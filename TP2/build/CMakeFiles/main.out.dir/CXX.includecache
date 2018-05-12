@@ -21,6 +21,8 @@ Scene.hpp
 /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Scene.hpp
 Image.hpp
 /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Image.hpp
+Rayon.hpp
+/home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Rayon.hpp
 
 /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Couleur.cpp
 Couleur.hpp
