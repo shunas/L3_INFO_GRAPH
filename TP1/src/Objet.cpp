@@ -1,9 +1,11 @@
 #include "Objet.hpp"
 
+//constructeur par défaut, matériau par défaut
 Objet::Objet():
 materiau(Materiau())
 {}
 
+//constructeur par paramètre
 Objet::Objet(Materiau materiau):
 materiau(materiau)
 {}

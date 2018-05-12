@@ -6,18 +6,20 @@
 class Plan:public Objet
 {
 	private:
+		//constante de l'équation
 		float a;
 		float b;
 		float c;
 		float d;
 	public:
-		Plan();
-		Plan(Materiau m,float a, float b, float c, float d);
+		Plan();	//constructeur par défaut, plan horizontal passant par O
+		Plan(Materiau m,float a, float b, float c, float d);	//constructeur par paramètre
 		float getA() const;
 		float getB() const;
 		float getC() const;
 		float getD() const;
-		bool intersection() const;
+		bool intersection() const; //routine d'intersection, @Objet
+		void afficher() const;	//permet d'afficher lorsque l'on passe par pointeur, @Objet
 		friend std::ostream& operator<<(std::ostream& os,const Plan& p);
 		friend std::istream& operator>>(std::istream& is,Plan& p);
 };

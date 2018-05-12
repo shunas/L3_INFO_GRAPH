@@ -15,18 +15,18 @@
 class Scene
 {
 	private:
-		std::vector <Objet*> objets;
-		std::vector <Source*> sources;
-		Couleur * fond;
+		std::vector <Objet*> objets;	//tableau qui contient tout  les objets
+		std::vector <Source*> sources;	//tableau qui contient toute les sources
+		Couleur * fond;					//conleur de fond de la scène
 	public:
-		Scene();
-		~Scene();
-		void setFond(Couleur * f);
-		void ajouterObjet(Objet * obj);
-		void ajouterSource(Source * src);
-		bool intersection() const;
-		void charger(std::string nom);
-		void afficher() const;
+		Scene();	//constructeur, scène vide couleur de fond noir
+		~Scene();	//destructeur
+		void setFond(Couleur * f);	//change la couleur de fond
+		void ajouterObjet(Objet * obj);	//ajoute un objet à la scène
+		void ajouterSource(Source * src);	//ajoute une source à la scène
+		bool intersection() const;	//routine d'intersection
+		void charger(std::string nom);	//charge une scène à partir d'un fichier existant (fichier à mettre dans le meme dossier que l'exécutable)
+		void afficher() const;	//affiche tout les élément de la scène
 };
 
 #endif

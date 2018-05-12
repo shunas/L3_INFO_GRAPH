@@ -1,9 +1,11 @@
 #include "Vecteur.hpp"
 
+// constructeur par défaut, vecteur nul
 Vecteur::Vecteur():
 dx(0),dy(0),dz(0)
 {}
 
+//constructeur par paramètre
 Vecteur::Vecteur(int dx,int dy,int dz):
 dx(dx),dy(dy),dz(dz)
 {}

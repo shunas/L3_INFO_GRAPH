@@ -6,12 +6,13 @@
 class Objet
 {
 	protected:
-		Materiau materiau;
+		Materiau materiau;	//matériau de l'objet
 	public:
-		Objet();
-		Objet(Materiau materiau);
+		Objet();	//constructeur par défaut, matériau par défaut
+		Objet(Materiau materiau);	//constructeur par paramètre
 		Materiau getMateriau() const;
-		virtual bool intersection() const = 0;
+		virtual bool intersection() const = 0;	//routine d'intersection
+		virtual void afficher() const =0;	//fonction qui permet d'afficher un objet passer en pointeur
 };
 
 #endif
