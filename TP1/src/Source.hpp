@@ -13,6 +13,7 @@ class Source
 		Source(Point position, Intensite intensite);
 		Point getPosition() const;
 		Intensite getIntensite() const;
+		void afficher() const;
 		friend std::ostream& operator<<(std::ostream& os,const Source& src);
 		friend std::istream& operator>>(std::istream& is,Source& src);
 

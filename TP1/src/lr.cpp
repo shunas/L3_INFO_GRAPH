@@ -11,6 +11,7 @@
 
 int main()
 {
+	/*
 	Point p(2,4,6);
 	std::cout<<p<<'\n';
 	Vecteur v(1,3,5);
@@ -25,9 +26,19 @@ int main()
 	Plan pl(m,1,4,3.5,8);
 	std::cout<<pl<<'\n';
 	Source src(p,i);
-	std::cout<<src<<'\n';
+	std::cout<<src<<'\n';*/
+
+	/*
 	Scene scene;
-	scene.ajouterObjet(new Sphere(m,p,2.5));
+	Materiau mat1(Couleur(0.2,0.4,0.6), 0.5, 0.3, 10);
+	scene.ajouterObjet(new Plan(mat1,0,1,0,0));
+	scene.ajouterObjet( new Sphere(mat1 ,Point(0,0,-3) ,0.5) );
+	scene.ajouterSource( new Source(Point(0,10,0) , Intensite(2,2,2)) );
 	scene.setFond(new Couleur(0.5,0.5,0.5));
+	scene.afficher();*/
+
+	Scene scene;
+	scene.charger("scene01.txt");
+	scene.afficher();
 	return 0;
 }

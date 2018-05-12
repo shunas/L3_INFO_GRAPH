@@ -12,6 +12,7 @@ class Objet
 		Objet(Materiau materiau);
 		Materiau getMateriau() const;
 		virtual bool intersection() const = 0;
+		virtual void afficher() const =0;
 };
 
 #endif

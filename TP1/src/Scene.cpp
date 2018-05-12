@@ -42,10 +42,7 @@ void Scene::charger(std::string nom)
 	{
 		Materiau m;
 		std::string str;
-		while(fichier.eof())
-		{
-			fichier >> str;
-
+		do{
 			if(str == "sphere")
 			{
 				float xc,yc,zc,r;
@@ -95,7 +92,8 @@ void Scene::charger(std::string nom)
 			{
 				getline(fichier,str);
 			}
-		}
+			fichier >> str;
+		}while(!fichier.eof());
 	}
 }
 
@@ -105,9 +103,12 @@ void Scene::afficher() const
 	std::cout << "contenu de la scène :\n";
 	for (Objet * o:objets)
 	{
-		std::cout << o;
+		o->afficher();
 	}
-
-
+	for (Source * s:sources)
+	{
+		s->afficher();
+	}
+	std::cout<<"La couleur de fond est "<<*fond<<'\n';
 }
 

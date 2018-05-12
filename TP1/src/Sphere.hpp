@@ -15,6 +15,7 @@ class Sphere : public Objet
 		Point getCentre() const;
 		float getRayon() const;
 		bool intersection() const;
+		void afficher() const;
 		friend std::ostream& operator<<(std::ostream& os,const Sphere& s);
 		friend std::istream& operator>>(std::istream& is,Sphere& s);
 };
