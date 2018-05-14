@@ -1,42 +1,50 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #include "Image.hpp"
 
+//constructeur par défaut, 10 sur 10
 Image::Image():
 hauteur(10),largeur(10)
 {
 	pixel = new Couleur[hauteur*largeur];
 }
 
+//constructeur avec paramètre
 Image::Image(int largeur, int hauteur):
 largeur(largeur),hauteur(hauteur)
 {
 	pixel = new Couleur[hauteur*largeur];
 }
 
+//destructeur
+Image::~Image()
+{
+	delete []pixel;
+}
 
-		Image::~Image()
-		{
-			delete []pixel;
-		}
+int Image::getLargeur() const
+{
+	return largeur;
+}
+int Image::getHauteur() const
+{
+	return hauteur;
+}
 
-		int Image::getLargeur() const
-		{
-			return largeur;
-		}
-		int Image::getHauteur() const
-		{
-			return hauteur;
-		}
+//change la couleur du pixel de cordonnée (x,y)
+void Image::setPixel(int x, int y, Couleur c)
+{
+	pixel[y*largeur+x] = c;
+}
 
-		void Image::setPixel(int x, int y, Couleur c)
-		{
-			pixel[y*largeur+x] = c;
-		}
+//récupère la couleur du pixel de cordonnée (x,y)
+Couleur Image::getPixel(int x, int y) const
+{
+	return pixel[y*largeur+x];
+}
 
-		Couleur Image::getPixel(int x, int y) const
-		{
-			return pixel[y*largeur+x];
-		}
-
+//sauvegarde l'image sous le format ppm
 bool Image::save(std::string nom)
 {
 	std::ofstream fichier(nom,std::ios::out);

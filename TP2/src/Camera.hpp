@@ -1,3 +1,6 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #ifndef CAMERA_HPP
 #define CAMERA_HPP
 #include <iostream>
@@ -9,17 +12,15 @@
 class Camera
 {
 	private:
-		Point position;
-		Point centre;
-		float distance;
+		Point position;	//position de la caméra
+		Point centre;	//point vers lequel la caméra regarde
+		float distance;	//distance entre la position et le point regarder
 	public:
-		Camera();
+		Camera();	//constructeur par defaut, position (0,0,2), regarde vers l'origine O
 		Point getPosition() const;
 		Point getCentre() const;
 		float getDistance() const;
-		void genererImage(const Scene& sc, Image& im);
-		//friend std::ostream operator<<(std::ostream os,const Camera& c);
-		//friend std::istream operator>>(std::istream is,Camera& c);
+		void genererImage(const Scene& sc, Image& im);	//genére une image bleu avec une diagonal blanc, lance des rayons (vecteur normalisé) vers les milieux de chaque pixel de l'image
 };
 
 #endif

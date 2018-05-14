@@ -1,3 +1,6 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #ifndef MATERIAU_HPP
 #define MATERIAU_HPP
 #include <iostream>

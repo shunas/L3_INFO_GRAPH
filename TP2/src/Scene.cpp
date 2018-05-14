@@ -1,3 +1,6 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #include "Scene.hpp"
 
 //constructeur, scène vide couleur de fond noir

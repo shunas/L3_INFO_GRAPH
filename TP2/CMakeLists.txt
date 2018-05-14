@@ -7,7 +7,7 @@ find_package( PkgConfig REQUIRED )
 pkg_check_modules( PKG REQUIRED cpputest )
 include_directories( ${PKG_INCLUDE_DIRS} )
 
-add_executable( main.out src/main.cpp
+add_executable( main.out src/lr.cpp
 	src/Point.cpp
 	src/Vecteur.cpp
 	src/Couleur.cpp

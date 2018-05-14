@@ -1,3 +1,6 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #include "Objet.hpp"
 
 //constructeur par défaut, matériau par défaut

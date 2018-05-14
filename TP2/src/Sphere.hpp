@@ -1,3 +1,6 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #ifndef SPHERE_HPP
 #define SPHERE_HPP
 #include <iostream>

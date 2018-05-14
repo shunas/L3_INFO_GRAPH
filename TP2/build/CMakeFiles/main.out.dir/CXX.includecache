@@ -113,6 +113,8 @@ Point.hpp
 /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Point.hpp
 Vecteur.hpp
 /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Vecteur.hpp
+fstream
+-
 
 /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Scene.cpp
 Scene.hpp
@@ -176,6 +178,8 @@ Vecteur.hpp
 
 /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/Vecteur.hpp
 iostream
+-
+cmath
 -
 
 /home/jimmy/Documents/Programmation/L3_INFO_GRAPH/TP2/src/main.cpp

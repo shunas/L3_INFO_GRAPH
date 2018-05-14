@@ -1,3 +1,6 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #include "Vecteur.hpp"
 
 // constructeur par défaut, vecteur nul
@@ -6,9 +9,18 @@ dx(0),dy(0),dz(0)
 {}
 
 //constructeur par paramètre
-Vecteur::Vecteur(int dx,int dy,int dz):
+Vecteur::Vecteur(float dx,float dy,float dz):
 dx(dx),dy(dy),dz(dz)
 {}
+
+//normalise le vecteur
+void Vecteur::normaliser()
+{
+	float norm = sqrt(pow(dx,2) + pow(dy,2) + pow(dz,2));
+	dx = dx/norm;
+	dy = dy/norm;
+	dz = dz/norm;
+}
 
 std::ostream& operator<<(std::ostream& os,const Vecteur& v)
 {

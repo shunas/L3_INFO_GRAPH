@@ -1,7 +1,10 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #ifndef VECTEUR_HPP
 #define VECTEUR_HPP
 #include <iostream>
-
+#include <cmath>
 class Vecteur
 {
 	public:
@@ -11,7 +14,8 @@ class Vecteur
 		float dz;
 
 		Vecteur(); // constructeur par défaut, vecteur nul
-		Vecteur(int dx,int dy,int dz);	//constructeur par paramètre
+		Vecteur(float dx,float dy,float dz);	//constructeur par paramètre
+		void normaliser();	//normalise le vecteur
 		friend std::ostream& operator<<(std::ostream& os,const Vecteur& v);
 		friend std::istream& operator>>(std::istream& is, Vecteur& v);
 };

@@ -1,3 +1,6 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #include "Sphere.hpp"
 
 //constructeur par défaut, sphère à l'origine de rayon 1

@@ -1,3 +1,6 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #ifndef POINT_HPP
 #define POINT_HPP
 #include <iostream>

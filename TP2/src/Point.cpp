@@ -1,3 +1,6 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #include "Point.hpp"
 
 //constructeur par défaut, point à l'origine
