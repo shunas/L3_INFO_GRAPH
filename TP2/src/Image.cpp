@@ -7,6 +7,7 @@
 Image::Image():
 hauteur(10),largeur(10)
 {
+	//création un tableau de pixel de taille hauteur * largeur donnée
 	pixel = new Couleur[hauteur*largeur];
 }
 
@@ -14,6 +15,7 @@ hauteur(10),largeur(10)
 Image::Image(int largeur, int hauteur):
 largeur(largeur),hauteur(hauteur)
 {
+	//création un tableau de pixel de taille hauteur * largeur passée en paramètre
 	pixel = new Couleur[hauteur*largeur];
 }
 
@@ -23,6 +25,7 @@ Image::~Image()
 	delete []pixel;
 }
 
+//obtention de la largeur et de la hauteur
 int Image::getLargeur() const
 {
 	return largeur;

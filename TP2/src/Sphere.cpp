@@ -18,19 +18,22 @@ bool Sphere::intersection() const //routine d'intersection, @Objet
 	return false;
 }
 
+//getter centre
 Point Sphere::getCentre() const
 {return centre;}
 
+//getter rayon
 float Sphere::getRayon() const
 {return rayon;}
 
 //fonction d'affichage par pointeur, @Objet
 void Sphere::afficher() const
 {
-	//je n'ai pas réussie à faire fonctionner l'opérateur << sur un pointeur, j'utilise donc une fonction intermédiaire
+	//on n'a pas réussie à faire fonctionner l'opérateur << sur un pointeur, on utilise donc une fonction intermédiaire
 	std::cout << *this<<'\n';
 }
 
+//opérateur de sortie
 std::ostream& operator<<(std::ostream& os,const Sphere& s)
 {
 	os <<"Sphere : de rayon "<<s.getRayon();
@@ -39,6 +42,7 @@ std::ostream& operator<<(std::ostream& os,const Sphere& s)
 	return os;
 }
 
+//opérateur d'entrée
 std::istream& operator>>(std::istream& is,Sphere& s)
 {
 	is >> s.centre >> s.rayon;

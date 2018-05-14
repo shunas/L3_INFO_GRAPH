@@ -13,6 +13,7 @@ Plan::Plan(Materiau m,float a, float b, float c, float d):
 Objet(m),a(a),b(b),c(c),d(d)
 {}
 
+/*obtention des contantes */
 float Plan::getA() const
 {return a;}
 
@@ -32,10 +33,11 @@ bool Plan::intersection() const
 //permet d'afficher lorsque l'on passe par pointeur, @Objet
 void Plan::afficher() const
 {
-	//je n'ai pas réussie à faire fonctionner l'opérateur << sur un pointeur, j'utilise donc une fonction intermédiaire
+	//on a pas réussie à faire fonctionner l'opérateur << sur un pointeur, on utilise donc une fonction intermédiaire
 	std::cout<<*this<<'\n';
 }
 
+//opérateur de sortie
 std::ostream& operator<<(std::ostream& os,const Plan& p)
 {
 	os <<"Plan : d'équation " <<p.getA()<<"x + "<<p.getB()<<"y + "<<p.getC()<<"z + "<<p.getD()<<" = 0 ";
@@ -43,6 +45,7 @@ std::ostream& operator<<(std::ostream& os,const Plan& p)
 	return os;
 }
 
+//opérateur d'entrée
 std::istream& operator>>(std::istream & is, Plan& p)
 {
 	is >> p.materiau >> p.a >> p.b >> p.c >> p.d;

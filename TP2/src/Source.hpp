@@ -14,11 +14,11 @@ class Source
 	public:
 		Source();	//constructeur par défaut, position à l'origine et intensité de (1,1,1)
 		Source(Point position, Intensite intensite);	//constructeur par paramètre
-		Point getPosition() const;
-		Intensite getIntensite() const;
+		Point getPosition() const;			//getter position
+		Intensite getIntensite() const;		//getter intensité
 		void afficher() const;	//fonction d'affichage de pointeur
-		friend std::ostream& operator<<(std::ostream& os,const Source& src);
-		friend std::istream& operator>>(std::istream& is,Source& src);
+		friend std::ostream& operator<<(std::ostream& os,const Source& src);	//opérateur sortie
+		friend std::istream& operator>>(std::istream& is,Source& src);		//opérateur entrée
 
 };
 

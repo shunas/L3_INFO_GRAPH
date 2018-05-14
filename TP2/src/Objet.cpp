@@ -13,6 +13,7 @@ Objet::Objet(Materiau materiau):
 materiau(materiau)
 {}
 
+//obtenir les informations d'un matériau
 Materiau Objet::getMateriau() const
 {return materiau;}
 

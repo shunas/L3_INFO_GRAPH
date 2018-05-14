@@ -7,6 +7,7 @@ Camera::Camera():
 position(Point(0,0,2)),centre(Point(0,0,0)),distance(2)
 {}
 
+/*obtention de la position, du centre et de la distance de la caméra */
 Point Camera::getPosition() const
 {return position;}
 

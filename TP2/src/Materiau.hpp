@@ -19,12 +19,13 @@ class Materiau
 		Materiau();	//constructeur par défaut, (0.8,0.8,0.8), 0.5, 0.1, 10
 		Materiau(Couleur couleur, float kd, float ks, int s);	//constructeur paramètre
 		void setAttibut(Couleur couleur, float kd, float ks, int s);	//setter,permet de prendre en compte la plage des valeurs
-		Couleur getCouleur() const;
+		Couleur getCouleur() const; //obtention de la couleur
+		//obtention des coefficiant de diffusion, spéculaire , et de la brillance
 		float getkd() const;
 		float getks() const;
 		int gets() const;
-		friend std::ostream& operator<<(std::ostream& os,const Materiau& m);
-		friend std::istream& operator>>(std::istream& is,Materiau& );
+		friend std::ostream& operator<<(std::ostream& os,const Materiau& m); //opérateur de sortie
+		friend std::istream& operator>>(std::istream& is,Materiau& ); //opérateur d'entrée
 };
 
 

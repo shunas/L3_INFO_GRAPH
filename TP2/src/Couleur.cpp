@@ -40,12 +40,14 @@ void Couleur::setColor(float r, float g, float b)
 	this->b = std::clamp(b,0.0f,1.0f);
 }
 
+//opérateur de sortie
 std::ostream& operator<<(std::ostream& os,const Couleur& c)
 {
 	os <<"("<<c.r<<","<<c.g<<","<<c.b<<")";
 	return os;
 }
 
+//opérateur d'entrée
 std::istream& operator>>(std::istream& is,Couleur& c)
 {
 	//on utiliseras setColor, au cas où l'on tente de mettre des valeurs hors de la plage

@@ -17,6 +17,7 @@ class Image
 		Image(int largeur,int hauteur);	//constructeur avec paramètre
 		~Image();	//destructeur
 
+		//obtention de la largeur et hauteur
 		int getLargeur() const;
 		int getHauteur() const;
 

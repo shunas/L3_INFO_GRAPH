@@ -17,8 +17,8 @@ class Couleur
 		Couleur();	//constructeur par défaut, couleur noire
 		Couleur(const float r, const float g, const float b);	//constructeur paramètre
 		void setColor(float r, float g, float b);	//setter, permet de prendre en comptre la plage des valeurs
-		friend std::istream& operator>>(std::istream& is,Couleur& c);
-		friend std::ostream& operator<<(std::ostream& os,const Couleur& c);
+		friend std::istream& operator>>(std::istream& is,Couleur& c); //opérateur de sortie
+		friend std::ostream& operator<<(std::ostream& os,const Couleur& c); //opérateur d'entrée
 };
 
 

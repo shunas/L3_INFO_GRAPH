@@ -17,14 +17,16 @@ class Plan:public Objet
 	public:
 		Plan();	//constructeur par défaut, plan horizontal passant par O
 		Plan(Materiau m,float a, float b, float c, float d);	//constructeur par paramètre
+		/* obtention des constantes a, b, c et d */
+		/* création de getter car nos attributs sont en private */
 		float getA() const;
 		float getB() const;
 		float getC() const;
 		float getD() const;
 		bool intersection() const; //routine d'intersection, @Objet
 		void afficher() const;	//permet d'afficher lorsque l'on passe par pointeur, @Objet
-		friend std::ostream& operator<<(std::ostream& os,const Plan& p);
-		friend std::istream& operator>>(std::istream& is,Plan& p);
+		friend std::ostream& operator<<(std::ostream& os,const Plan& p); //opérateur de sortie
+		friend std::istream& operator>>(std::istream& is,Plan& p); //opérateur d'entrée
 };
 
 

@@ -13,12 +13,14 @@ Point::Point(int x,int y,int z):
 x(x),y(y),z(z)
 {}
 
+//opérateur de sortie
 std::ostream& operator<<(std::ostream& os,const Point& p)
 {
 	os <<"("<<p.x<<","<<p.y<<","<<p.z<<")";
 	return os;
 }
 
+//opérateur d'entrée
 std::istream& operator>>(std::istream& is,Point& p)
 {
 	is >> p.x >> p.y >> p.z;

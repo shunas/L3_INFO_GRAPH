@@ -17,6 +17,7 @@ class Camera
 		float distance;	//distance entre la position et le point regarder
 	public:
 		Camera();	//constructeur par defaut, position (0,0,2), regarde vers l'origine O
+		/*obtention de la position, du centre et de la distance de la caméra */
 		Point getPosition() const;
 		Point getCentre() const;
 		float getDistance() const;

@@ -13,25 +13,29 @@ Source::Source(Point position,Intensite intensite):
 position(position),intensite(intensite)
 {}
 
+//getter position
 Point Source::getPosition() const
 {return position;}
 
+//getter intensité
 Intensite Source::getIntensite() const
 {return intensite;}
 
 //fonction d'affichage de pointeur
 void Source::afficher() const
 {
-	//je n'ai pas réussie à faire fonctionner l'opérateur << sur un pointeur, j'utilise donc une fonction intermédiaire
+	//on a pas réussie à faire fonctionner l'opérateur << sur un pointeur, on utilise donc une fonction intermédiaire
 	std::cout<<*this<<'\n';
 }
 
+//opérateur sortie
 std::ostream& operator<<(std::ostream& os,const Source& src)
 {
 	os <<"Source en "<<src.getPosition()<<" d'intensité "<<src.getIntensite()<<".";
 	return os;
 }
 
+//opérateur d'entrée
 std::istream& operator>>(std::istream& is,Source& src)
 {
 	is >> src.position >> src.intensite;

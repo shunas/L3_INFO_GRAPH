@@ -15,7 +15,8 @@ class Rayon
 
 		Rayon();	//constructeur par defaut, origine O et vecteur nul
 		Rayon(Point origine,Vecteur direction);	//constructeur par paramètre
-		friend std::ostream& operator<<(std::ostream& os,const Rayon& r);
+		friend std::ostream& operator<<(std::ostream& os,const Rayon& r); //opérateur de sortie
+		friend std::istream& operator>>(std::istream& is,Rayon& r); //opérateur d'entrée
 };
 
 #endif

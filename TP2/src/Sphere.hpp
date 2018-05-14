@@ -15,12 +15,12 @@ class Sphere : public Objet
 	public:
 		Sphere(); //constructeur par défaut, sphère à l'origine de rayon 1
 		Sphere(Materiau materiau, Point centre, float rayon); // constructeur par paramètre
-		Point getCentre() const;
-		float getRayon() const;
+		Point getCentre() const;	//getter centre
+		float getRayon() const;		//getter rayon
 		bool intersection() const;	//routine d'intersection, @Objet
 		void afficher() const;		//fonction d'affichage par pointeur, @Objet
-		friend std::ostream& operator<<(std::ostream& os,const Sphere& s);
-		friend std::istream& operator>>(std::istream& is,Sphere& s);
+		friend std::ostream& operator<<(std::ostream& os,const Sphere& s);	//opérateur sortie
+		friend std::istream& operator>>(std::istream& is,Sphere& s);	//opérateur entrée
 };
 
 
