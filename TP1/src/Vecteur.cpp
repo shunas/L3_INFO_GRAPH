@@ -1,3 +1,6 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #include "Vecteur.hpp"
 
 // constructeur par défaut, vecteur nul

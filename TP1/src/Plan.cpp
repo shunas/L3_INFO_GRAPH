@@ -1,3 +1,6 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #include "Plan.hpp"
 
 //constructeur par défaut, plan horizontal passant par O

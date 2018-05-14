@@ -1,3 +1,6 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #ifndef INTENSITE_HPP
 #define INTENSITE_HPP
 #include <iostream>

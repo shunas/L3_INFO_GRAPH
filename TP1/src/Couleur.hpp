@@ -1,3 +1,6 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #ifndef COULEUR_HPP
 #define COULEUR_HPP
 #include <iostream>

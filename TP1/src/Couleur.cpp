@@ -1,3 +1,6 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #include "Couleur.hpp"
 
 //constructeur par défaut, couleur noire

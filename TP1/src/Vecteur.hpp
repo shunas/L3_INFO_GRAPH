@@ -1,3 +1,6 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #ifndef VECTEUR_HPP
 #define VECTEUR_HPP
 #include <iostream>

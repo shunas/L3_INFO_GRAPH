@@ -1,3 +1,6 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #include "Materiau.hpp"
 
 //constructeur par défaut, (0.8,0.8,0.8), 0.5, 0.1, 10

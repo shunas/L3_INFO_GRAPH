@@ -1,3 +1,6 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #include "Intensite.hpp"
 
 //constructeur par defaut, intensité 0

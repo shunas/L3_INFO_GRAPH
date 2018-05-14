@@ -1,3 +1,6 @@
+// HARRAT Zohra  &  DENIS Jimmy
+
+
 #include "Source.hpp"
 
 //constructeur par défaut, position à l'origine et intensité de (1,1,1)
