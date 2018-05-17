@@ -14,7 +14,7 @@ int main()
 	Scene s;
 	//création d'une image de 256*256
 	Image i(256,256);
-	Couleur *vert=new Couleur(0.0,1.0,0.0);
+	Couleur *vert=new Couleur(0.0,0.0,0.0);
 	/* génère l'image fond bleu avec diago blanche et lance des rayons à chaque pixels*/
 	s.setFond(vert);
 	s.charger("scene02.txt");
